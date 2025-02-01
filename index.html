@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
 
-    <!-- DaisyUi and Tailwind cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    
+    <!-- Tailwind CSS & DaisyUI -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/d67a630793.js" crossorigin="anonymous"></script>
+
     <!-- Google font cdn -->
+     <!-- Google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -30,89 +39,141 @@
 
     </style>
 
-    <!-- Font awesome cdn -->
-    <script src="https://kit.fontawesome.com/d67a630793.js" crossorigin="anonymous"></script>
-    
+
 </head>
 <body>
 
     <!-- Header section -->
-    <header>
-        <!-- navbar -->
-        <nav class="sora-font border border-gray">
-            <div class="navbar bg-base-100">
-                <div class="flex-1">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
-                      <li><a>Find a pet</a></li>
-                      
-                      <li><a>Breeds</a></li>
-                      
-                      <li><a>Contact us</a></li>
-                    </ul>
-                  </div>
-                  
-                  <img src="c1-assets/logo-header.png" alt="">
+     <header>
+        <!-- Navbar -->
+    <nav class="navbar bg-[#FFF9F4] px-5 py-3 lg:border-none border border-gray-300 sora-font lg:border no-border">
+        <div class="flex w-full items-center justify-between">
+            <!-- Left Section (Logo & Name) -->
+            <div class="flex items-center">
+                <img src="c1-assets/logo-header.png" alt="Logo" class="w-8 h-8">
+                <span class="text-xl">Browse</span>
+                <span class="text-yellow-400 text-xl">4</span>
+                <span class="text-xl">Pets</span>
+            </div>
 
-                  <span class="font-bold text-xl   hidden">Browse</span>
-                  <span class="text-yellow-300 text-xl hidden">4</span>
-                  <span class="font-bold text-xl hidden">Pets</span>
+            <!-- Center Section (Navigation Links - Visible in Large Screens) -->
+            <div class="hidden lg:flex gap-10">
+                <a class="hover:text-yellow-500 cursor-pointer">Find a pet</a>
+                <a class="hover:text-yellow-500 cursor-pointer">Breeds</a>
+                <a class="hover:text-yellow-500 cursor-pointer">Contact us</a>
+            </div>
 
-                  
+            <!-- Right Section (Icons & Buttons) -->
+            <div class="flex items-center gap-4">
+                <i class="fa-regular fa-bell hidden lg:block"></i>
+                <i class="fa-solid fa-magnifying-glass hidden lg:block"></i> <!-- Search Icon -->
+                <a class="btn bg-white border-yellow-300 text-black px-4 py-2">Login</a>
+                <a class="btn bg-yellow-400 text-black px-4 py-2 ">Register</a>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <label for="menu-toggle" class="cursor-pointer">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </label>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Find a pet</a></li>
-                      
-                      <li><a>Breeds</a></li>
-                      <li><a>Contact us</a></li>
-                      
-                      
-                  </ul>
-                </div>
+            </div>
+        </div>
+    </nav>
 
+     </header>
+
+
+     <!-- Main Sections -->
+
+     <main>
+        <!-- Pamper your cat section -->
+        <section class="flex flex-col lg:flex-row items-center max-w-7xl mx-auto px-5 lg:px-20 py-10">
+        
+            <!-- Left Side: Text Content -->
+            <div class=" w-full lg:w-1/2 lg:text-left">
+                <h1 class="text-4xl font-bold adlam-font leading-tight">
+                    Pamper Your Pet, <br> Because They Deserve <br> the Best
+                </h1>
+                <p class="text-gray-600 mt-4">
+                    Discover a world of treats, toys, and essentials handpicked for your furry friends. 
+                    Shop now and make tails wag with joy!
+                </p>
+                <a href="#" class="btn bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 mt-6">
+                    Find a pet
+                </a>
+            </div>
+    
+            <!-- Right Side: Cat Image -->
+            <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
+                <img src="c1-assets/cat-big.png" alt="Cute Cat" class="w-full max-w-md lg:max-w-full">
+            </div>
+    
+        </section>
+
+        <!-- Browse by categories section -->
+        <section class="max-w-7xl mx-auto px-5 lg:px-20 py-10">
+            <h2 class="text-2xl font-bold adlam-font mb-6">Browse By Categories</h2>
+    
+            <!-- Categories Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
                 
-                <div class="gap-2">
-                    <i class="fa-regular fa-bell hidden"></i>
-                <i class="fa-solid fa-magnifying-glass hidden"></i>
-                  <a class="btn bg-white w-30 text-black border-yellow-200 hidden">Login</a>
-                  <a class="btn bg-yellow-300 w-30 text-black hidden">Register</a>
+                <!-- Category Card: Dog -->
+                <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
+                        <img src="c1-assets/dog-cartoon.png" alt="Dog" class="w-12">
+                    </div>
+                    <h3 class="text-lg font-semibold mt-3 sora-font">Dog</h3>
+                    <p class="text-sm text-gray-700 sora-font">3 items</p>
                 </div>
-                <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-              </div>
-        </nav>
-
-    </header>
-
-    <!-- Main section -->
-
-    <main>
-
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-
-    </footer>
-
-
-
-
+    
+                <!-- Category Card: Fish -->
+                <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg ">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
+                        <img src="c1-assets/fish-cartoon.png" alt="Fish" class="w-12">
+                    </div>
+                    <h3 class="text-lg font-semibold mt-3 sora-font">Fish</h3>
+                    <p class="text-sm text-gray-700 sora-font">3 items</p>
+                </div>
+    
+                <!-- Category Card: Cat -->
+                <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
+                        <img src="c1-assets/cat-cartoon.png" alt="Cat" class="w-12">
+                    </div>
+                    <h3 class="text-lg font-semibold mt-3 sora-font">Cat</h3>
+                    <p class="text-sm text-gray-700 sora-font">3 items</p>
+                </div>
+    
+                <!-- Category Card: Birds -->
+                <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
+                        <img src="c1-assets/bird-cartoon.png" alt="Birds" class="w-12">
+                    </div>
+                    <h3 class="text-lg font-semibold mt-3 sora-font">Birds</h3>
+                    <p class="text-sm text-gray-700 sora-font">3 items</p>
+                </div>
+    
+                <!-- Category Card: Small Pet -->
+                <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
+                        <img src="c1-assets/mouse-cartoon.png" alt="Small Pet" class="w-12">
+                    </div>
+                    <h3 class="text-lg font-semibold mt-3 sora-font">Small Pet</h3>
+                    <p class="text-sm text-gray-700 sora-font">3 items</p>
+                </div>
+    
+                <!-- Category Card: Rabbit -->
+                <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
+                        <img src="c1-assets/rabbit-cartoon.png" alt="Rabbit" class="w-12">
+                    </div>
+                    <h3 class="text-lg font-semibold mt-3 sora-font">Rabbit</h3>
+                    <p class="text-sm text-gray-700 sora-font">2 items</p>
+                </div>
+    
+            </div>
+        </section>
+    
+     </main>
 </body>
 </html>
