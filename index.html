@@ -86,30 +86,28 @@
      <!-- Main Sections -->
 
      <main>
-        <!-- Pamper your cat section -->
+        <!-- Banner/Pamper your cat section -->
         <section class="flex flex-col lg:flex-row items-center max-w-7xl mx-auto px-5 lg:px-20 py-10">
+          <!-- Left Side: Text Content -->
+          <div class="w-full  lg:w-1/2 lg:text-left">
+            <h1 class="text-4xl font-bold adlam-font leading-tight">
+              Pamper Your Pet, <br> Because They Deserve <br> the Best
+            </h1>
+            <p class="text-gray-600 mt-4">
+              Discover a world of treats, toys, and essentials handpicked for your furry friends. 
+              Shop now and make tails wag with joy!
+            </p>
+            <a href="#" class="btn bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 mt-6">
+              Find a pet
+            </a>
+          </div>
         
-            <!-- Left Side: Text Content -->
-            <div class=" w-full lg:w-1/2 lg:text-left">
-                <h1 class="text-4xl font-bold adlam-font leading-tight">
-                    Pamper Your Pet, <br> Because They Deserve <br> the Best
-                </h1>
-                <p class="text-gray-600 mt-4">
-                    Discover a world of treats, toys, and essentials handpicked for your furry friends. 
-                    Shop now and make tails wag with joy!
-                </p>
-                <a href="#" class="btn bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 mt-6">
-                    Find a pet
-                </a>
-            </div>
-    
-            <!-- Right Side: Cat Image -->
-            <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
-                <img src="c1-assets/cat-big.png" alt="Cute Cat" class="w-full max-w-md lg:max-w-full">
-            </div>
-    
+          <!-- Right Side: Cat Image with Animation -->
+          <div class="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+            <img src="c1-assets/cat-big.png" alt="Cute Cat" class="w-full max-w-md lg:max-w-full animate-">
+          </div>
         </section>
-
+        
         <!-- Browse by categories section -->
         <section class="max-w-7xl mx-auto px-5 lg:px-20 py-10">
             <h2 class="text-2xl font-bold adlam-font mb-6">Browse By Categories</h2>
@@ -181,7 +179,7 @@
 
         <section class="mx-auto px-5 lg:px-20 py-10 bg-white lg:bg-[#FFF9F4]">
           <div class="max-w-7xl mx-auto px-5 lg:px-20 py-10">
-            <h3 class="adlam-font text-2xl mb-10 mx-3 font-bold">Trending Pet Products</h3>
+            <h3 class="adlam-font text-2xl mb-10 font-bold">Trending Pet Products</h3>
             
         
             <div class="md:flex justify-between mx-3 gap-5">
@@ -189,7 +187,7 @@
                <div class="relative md:w-2/6 bg-[#F9DF8A] bg-no-repeat  pt-9 pb-44 md: px-8 rounded-2xl space-y-3 bg-right-bottom bg-mt-4 mb-5 md:mb-0">
                 <h4 class="adlam-font text-3xl">T- Shirt For Dogs</h4>
                 <p class="text-sm text-gray-500 sora-font">Discover a world of treats, toys, and essentials handpicked for </p>
-                <button class="text-xl px-8 py-3 bg-white rounded-lg sora-font">Shop Now</button>
+                <button class="text-xl px-8 py-3 bg-white rounded-lg sora-font hover:bg-blue-300">Shop Now</button>
                 <img class="absolute  right-5 top-28 w-44" src="c1-assets/cute-pet-mid.png" alt="">
                </div>
     
@@ -315,7 +313,7 @@
       <div class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] p-6 rounded-lg shadow-sm flex items-center">
         <div class="flex-1">
           <p class="text-sm text-gray-700 font-semibold mb-1 sora-font lg:flex hidden">Under Price</p>
-          <h3 class="text-1xl font-bold adlam-font -mb-2 -mt-20">Pet Grooming Mitt</h3>
+          <h3 class="text-1xl font-bold adlam-font -mb-2 -mt-20 lg:mb-2 lg:mt-2 ">Pet Grooming Mitt</h3>
           <p class="text-sm text-white adlam-font mb-4 lg:flex hidden">(Easy Hair Removal)</p>
           <p class="text-2xl  adlam-font text-white lg:text-black">$7.99</p>
         </div>
@@ -340,7 +338,7 @@
 
 
   <!-- pet care section-challenge part -->
-  <section class="mx-auto px-5 lg:px-20 py-10 bg-white">
+  <section class="mx-auto px-5 lg:px-20 py-1 bg-white">
     <div class="max-w-7xl mx-auto px-5 lg:px-20 py-10">
       <h3 class="adlam-font text-3xl mb-10 mx-3 font-bold text-gray-800"> Essential Pet Care Tips </h3>
       <div class="flex flex-col-reverse md:flex-row justify-between mx-3 gap-5">
@@ -372,59 +370,65 @@
   
   
      </main>
-     <br><br><br><br>
+     
 
 
      <!-- footer section -->
      
   
-     <footer class="relative bg-yellow-100 py-20">
-    <!-- Overlay Section -->
-    <div class="absolute -top-20 left-1/2 transform -translate-x-1/2 max-w-6xl w-full bg-[#FFF9F4] rounded-lg p-6 flex flex-col lg:flex-row items-center gap-6">
-      <img src="c1-assets/cute-pet-mid.png" alt="Dog Image" class="w-48 h-48 object-contain mx-auto lg:mx-0">
-      <div class="flex-1 text-center lg:text-left mt-4 lg:mt-0">
-        <h3 class="text-2xl font-bold">Get Pawsome News!</h3>
-        <p class="text-gray-600">Exclusive training tips, tricks, product deals and more.</p>
-        <div class="mt-4">
-          <input type="email" placeholder="Enter email..." class="input input-bordered w-full lg:w-96">
-          <div class="mt-4 lg:mt-2 lg:flex lg:justify-start">
-            <button class="btn bg-yellow-200">Subscribe</button>
-          </div>
+     <!-- News Start -->
+    <div class= "relative flex justify-center md:px-2">
+      <section class= "absolute top-24 bg-[#FFF9F4] rounded-2xl max-w-screen-sm md:max-w-screen-xl md:px-3 px-6 mx-2 md:mx-0  pt-4 pb-8 ">
+      <div class="md:flex justify-around items-center md:px-40">
+        <img class="w-96" src="c1-assets/cute-pet-mid.png" alt="">
+
+        <!-- news text -->
+        <div class="space-y-6 md:block flex  flex-col justify-center items-center">
+          <h3 class="adlam-font md:text-4xl text-3xl">Get Pawsome News!</h3>
+          <p class=" text-gray-500 text-xl text-center sora-font">Exclusive training tips, ticks, product deals and more.</p>
+          <input class=" sora-font md:pr-64 pr-24 pl-4 py-3" type="email" placeholder="Enter Email.... ">
+          <br>
+          <button class="text-xl px-10 py-3 bg-yellow-300 rounded-lg hover:bg-blue-300 sora-font">Subscribe</button>
         </div>
       </div>
+    </section>
+    </div>
+    <!-- News End -->
+
+      
+    </main>
+
+    <!-- Footer Start-->
+    <footer class="bg-[#F9DF8A] md:mt-80 mt-80 md:pt-80 pt-[700px] lg:pt-[400px] pb-32">
+      <div class="md:flex md:justify-between space-y-6 gap-5 max-w-screen-xl mx-auto md:px-3 px-4 ">
+      <div >
+        <!-- logo -->
+         <div class="flex items-center gap-3 pb-3">
+        <img  src="c1-assets/logo-footer.png" alt="">
+        <h6 class="text-2xl">Browse Pets</h6>
+         </div>
+        <p class="max-w-xs sora-font">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
     </div>
 
-    <!-- Footer Links -->
-    <div class="mt-64 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 px-6">
-      <!-- Browse Pets Section -->
-      <div class="flex flex-wrap sm:flex-nowrap gap-4 items-center">
-        <img src="your-uploaded-image-url-here" alt="Pet Icon" class="w-16 h-16 object-contain">
-        <div class="w-full sm:w-auto">
-          <h4 class="text-lg font-bold mb-2">Browse Pets</h4>
-          <p class="text-gray-600">Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
-        </div>
-      </div>
+    <!-- find a pet -->
+     <div class="flex flex-col gap-3 sora-font">
+     <a href="">Find a pet</a>
+     <a href="">Breeds</a>
+     <a href="">Contact us</a>
+     </div>
 
-      <!-- Quick Links -->
+     <!-- social -->
       <div>
-        
-        <ul>
-          <li><a href="#" class="hover:underline">Find a pet</a></li>
-          <li><a href="#" class="hover:underline">Breeds</a></li>
-          <li><a href="#" class="hover:underline">Contact us</a></li>
-        </ul>
-      </div>
-      <!-- Social Links -->
-      <div class="flex flex-wrap sm:flex-nowrap flex-col sm:items-end">
-        <h4 class="text-lg font-bold mb-2">Follow Us</h4>
-        <div class="flex gap-4  sm:justify-start">
-          <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-linkedin"></i></a>
-          <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-youtube"></i></a>
+        <h4>Follow Us</h4>
+        <div class="space-x-3 ">
+          <i class="fa-brands fa-facebook text-xl"></i>
+          <i class="fa-brands fa-instagram text-xl"></i>
+          <i class="fa-brands fa-linkedin text-xl"></i>
+          <i class="fa-brands fa-youtube text-xl"></i>
         </div>
       </div>
-    </div>
-  </footer>
+      </div>
+    </footer>
+    <!-- Footer End-->
 </body>
 </html>
