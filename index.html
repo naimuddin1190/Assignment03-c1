@@ -51,9 +51,9 @@
             <!-- Left Section (Logo & Name) -->
             <div class="flex items-center">
                 <img src="c1-assets/logo-header.png" alt="Logo" class="w-8 h-8">
-                <span class="text-xl">Browse</span>
-                <span class="text-yellow-400 text-xl">4</span>
-                <span class="text-xl">Pets</span>
+                <span class="text-xl lg:flex hidden">Browse</span>
+                <span class="text-yellow-400 text-xl lg:flex hidden">4</span>
+                <span class="text-xl lg:flex hidden">Pets</span>
             </div>
 
             <!-- Center Section (Navigation Links - Visible in Large Screens) -->
@@ -67,8 +67,8 @@
             <div class="flex items-center gap-4">
                 <i class="fa-regular fa-bell hidden lg:block"></i>
                 <i class="fa-solid fa-magnifying-glass hidden lg:block"></i> <!-- Search Icon -->
-                <a class="btn bg-white border-yellow-300 text-black px-4 py-2">Login</a>
-                <a class="btn bg-yellow-400 text-black px-4 py-2 ">Register</a>
+                <a class="btn bg-white border-yellow-300 text-black px-4 py-2 lg:flex hidden">Login</a>
+                <a class="btn bg-yellow-400 text-black px-4 py-2 lg:flex hidden">Register</a>
 
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden">
@@ -179,89 +179,132 @@
 
         <!-- Trending section -->
 
-         <section class="max-w-6xl mx-auto p-6">
-    <h2 class="text-3xl font-bold mb-6">Trending Pet Products</h2>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-      <!-- Featured Item -->
-      <div class="bg-yellow-100 p-6 rounded-lg shadow-lg flex flex-col items-center text-center col-span-1 md:col-span-1">
-        <img src="your-uploaded-image-URL-here" alt="Dog T-shirt" class="w-40 h-40 object-cover mb-4 rounded-lg">
-        <h3 class="text-xl font-bold mb-2">T-Shirt For Dogs</h3>
-        <p class="text-sm mb-4">Discover a world of treats, toys, and essentials handpicked for your pet.</p>
-        <a href="#" class="btn btn-primary">Shop Now</a>
-      </div>
+        <section class="mx-auto px-5 lg:px-20 py-10 bg-white lg:bg-[#FFF9F4]">
+          <div class="max-w-7xl mx-auto px-5 lg:px-20 py-10">
+            <h3 class="adlam-font text-2xl mb-10 mx-3 font-bold lg:flex hidden">Trending Pet Products</h3>
+            <h3 class="adlam-font text-2xl mb-3 mx-3 font-bold lg:hidden">Browse By Categories</h3>
+        
+            <div class="md:flex justify-between mx-3 gap-5">
+              <!-- big card -->
+               <div class="relative md:w-2/6 bg-[#F9DF8A] bg-no-repeat  pt-9 pb-44 md: px-8 rounded-2xl space-y-3 bg-right-bottom bg-mt-4 mb-5 md:mb-0">
+                <h4 class="adlam-font text-3xl">T- Shirt For Dogs</h4>
+                <p class="text-sm text-gray-500 sora-font">Discover a world of treats, toys, and essentials handpicked for </p>
+                <button class="text-xl px-8 py-3 bg-white rounded-lg sora-font">Shop Now</button>
+                <img class="absolute  right-5 top-28 w-44" src="c1-assets/cute-pet-mid.png" alt="">
+               </div>
+    
+        
+              <!-- Small Cards Grid -->
+              <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 flex-1 mt-10">
+                <!--Small Cards 1-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/dog-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
 
-      <!-- Product Grid -->
-      <div class="col-span-3 grid grid-cols-3 gap-4">
-        <!-- Product Card -->
-        <div class="bg-white p-4 rounded-lg shadow-md text-center w-[275px] h-[118px] flex flex-col justify-center">
-          <img src="your-uploaded-image-URL-here" alt="Pet Bed" class="w-16 h-16 object-cover mx-auto mb-2">
-          <h4 class="text-md font-semibold">Pet Bed</h4>
-          <p class="text-sm text-gray-600">$39.99</p>
-          <div class="rating mt-1">
-            <span class="text-yellow-500">&#9733; 4.5</span>
+                <!--Small Cards 2-->
+                
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/fish-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 3-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/bird-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 4-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/rabbit-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 5-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/bird-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                  
+                </div>
+                <!--Small Cards 6-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/pet-couch.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 7-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/fish-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 8-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/pet-couch.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 9-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64 lg:flex hidden">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/rabbit-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
           </div>
-        </div>
-        <!--  Product Cards -->
-        <div class="bg-white p-4 rounded-lg shadow-md text-center w-[275px] h-[118px] flex flex-col justify-center">
-          <img src="your-uploaded-image-URL-here" alt="Pet Bed" class="w-16 h-16 object-cover mx-auto mb-2">
-          <h4 class="text-md font-semibold">Pet Bed</h4>
-          <p class="text-sm text-gray-600">$39.99</p>
-          <div class="rating mt-1">
-            <span class="text-yellow-500">&#9733; 4.5</span>
-          </div>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow-md text-center w-[275px] h-[118px] flex flex-col justify-center">
-          <img src="your-uploaded-image-URL-here" alt="Pet Bed" class="w-16 h-16 object-cover mx-auto mb-2">
-          <h4 class="text-md font-semibold">Pet Bed</h4>
-          <p class="text-sm text-gray-600">$39.99</p>
-          <div class="rating mt-1">
-            <span class="text-yellow-500">&#9733; 4.5</span>
-          </div>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow-md text-center w-[275px] h-[118px] flex flex-col justify-center">
-          <img src="your-uploaded-image-URL-here" alt="Pet Bed" class="w-16 h-16 object-cover mx-auto mb-2">
-          <h4 class="text-md font-semibold">Pet Bed</h4>
-          <p class="text-sm text-gray-600">$39.99</p>
-          <div class="rating mt-1">
-            <span class="text-yellow-500">&#9733; 4.5</span>
-          </div>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow-md text-center w-[275px] h-[118px] flex flex-col justify-center">
-          <img src="your-uploaded-image-URL-here" alt="Pet Toy" class="w-16 h-16 object-cover mx-auto mb-2">
-          <h4 class="text-md font-semibold">Pet Toy</h4>
-          <p class="text-sm text-gray-600">$19.99</p>
-          <div class="rating mt-1">
-            <span class="text-yellow-500">&#9733; 4.7</span>
-          </div>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow-md text-center w-[275px] h-[118px] flex flex-col justify-center">
-          <img src="your-uploaded-image-URL-here" alt="Pet Bowl" class="w-16 h-16 object-cover mx-auto mb-2">
-          <h4 class="text-md font-semibold">Pet Bowl</h4>
-          <p class="text-sm text-gray-600">$14.99</p>
-          <div class="rating mt-1">
-            <span class="text-yellow-500">&#9733; 4.8</span>
-          </div>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow-md text-center w-[275px] h-[118px] flex flex-col justify-center">
-          <img src="your-uploaded-image-URL-here" alt="Pet Blanket" class="w-16 h-16 object-cover mx-auto mb-2">
-          <h4 class="text-md font-semibold">Pet Blanket</h4>
-          <p class="text-sm text-gray-600">$29.99</p>
-          <div class="rating mt-1">
-            <span class="text-yellow-500">&#9733; 4.6</span>
-          </div>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow-md text-center w-[275px] h-[118px] flex flex-col justify-center">
-          <img src="your-uploaded-image-URL-here" alt="Pet Mat" class="w-16 h-16 object-cover mx-auto mb-2">
-          <h4 class="text-md font-semibold">Pet Mat</h4>
-          <p class="text-sm text-gray-600">$24.99</p>
-          <div class="rating mt-1">
-            <span class="text-yellow-500">&#9733; 4.7</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+        </section>
+        
+        
 
   <!-- Everyday low price section -->
 
