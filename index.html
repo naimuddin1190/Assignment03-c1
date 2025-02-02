@@ -56,7 +56,7 @@
                 <span class="text-xl lg:flex hidden">Pets</span>
             </div>
 
-            <!-- Center Section (Navigation Links - Visible in Large Screens) -->
+            <!--Links -->
             <div class="hidden lg:flex gap-10">
                 <a class="hover:text-yellow-500 cursor-pointer">Find a pet</a>
                 <a class="hover:text-yellow-500 cursor-pointer">Breeds</a>
@@ -66,7 +66,7 @@
             <!-- Right Section (Icons & Buttons) -->
             <div class="flex items-center gap-4">
                 <i class="fa-regular fa-bell hidden lg:block"></i>
-                <i class="fa-solid fa-magnifying-glass hidden lg:block"></i> <!-- Search Icon -->
+                <i class="fa-solid fa-magnifying-glass hidden lg:block"></i> 
                 <a class="btn bg-white border-yellow-300 text-black px-4 py-2 lg:flex hidden">Login</a>
                 <a class="btn bg-yellow-400 text-black px-4 py-2 lg:flex hidden">Register</a>
 
@@ -87,26 +87,36 @@
 
      <main>
         <!-- Banner/Pamper your cat section -->
-        <section class="flex flex-col lg:flex-row items-center max-w-7xl mx-auto px-5 lg:px-20 py-10">
-          <!-- Left Side: Text Content -->
-          <div class="w-full  lg:w-1/2 lg:text-left">
-            <h1 class="text-4xl font-bold adlam-font leading-tight">
-              Pamper Your Pet, <br> Because They Deserve <br> the Best
-            </h1>
-            <p class="text-gray-600 mt-4">
-              Discover a world of treats, toys, and essentials handpicked for your furry friends. 
-              Shop now and make tails wag with joy!
-            </p>
-            <a href="#" class="btn bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 mt-6">
-              Find a pet
-            </a>
+      <section class="relative max-w-screen-xl mx-auto md:px-3 px-4 space-y-4 max-w-7xl mx-auto px-5 lg:px-20 py-10 ">
+        <!-- banner img -->
+        <div class=" lg:top-0 md:top-20 md:pt-14 lg:pt-0 pt-96">
+          <img class=" animate-pulse" src="c1-assets/cat-big.png" alt="">
           </div>
-        
-          <!-- Right Side: Cat Image with Animation -->
-          <div class="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
-            <img src="c1-assets/cat-big.png" alt="Cute Cat" class="w-full max-w-md lg:max-w-full animate-">
+          <!-- Banner text -->
+          <div class=" space-y-6 absolute lg:top-14 md:top-5 top-0">
+
+
+            
+            <div>
+              <h3 class=" inline text-4xl adlam-font">Pamper Your Pet,<br>Because They Deserve<br>the Best</h3>
+
+            
+            <div class="absolute top-32 left-56 field h-16 md:block hidden ">
+              <div>
+              </div>
+            </div>
+            </div>
+            
+
+
+
+
+          <p class="max-w-xs md:max-w-lg text-gray-500 sora-font">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+          <button class="text-xl px-10 py-4 bg-yellow-300 rounded-lg hover:bg-blue-300 sora-font">Find a pet</button>
           </div>
-        </section>
+      </section>
+
+     <!-- Banner End -->
         
         <!-- Browse by categories section -->
         <section class="max-w-7xl mx-auto px-5 lg:px-20 py-10">
@@ -115,7 +125,7 @@
             <!-- Categories Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
                 
-                <!-- Category Card: Dog -->
+                <!-- Category Card 1 -->
                 <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg">
                     <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
                         <img src="c1-assets/dog-cartoon.png" alt="Dog" class="w-12">
@@ -124,7 +134,7 @@
                     <p class="text-sm text-gray-700 sora-font">3 items</p>
                 </div>
     
-                <!-- Category Card: Fish -->
+                <!-- Category Card 2-->
                 <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg ">
                     <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
                         <img src="c1-assets/fish-cartoon.png" alt="Fish" class="w-12">
@@ -133,7 +143,7 @@
                     <p class="text-sm text-gray-700 sora-font">3 items</p>
                 </div>
     
-                <!-- Category Card: Cat -->
+                <!-- Category Card 3 -->
                 <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg">
                     <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
                         <img src="c1-assets/cat-cartoon.png" alt="Cat" class="w-12">
@@ -142,7 +152,7 @@
                     <p class="text-sm text-gray-700 sora-font">3 items</p>
                 </div>
     
-                <!-- Category Card: Birds -->
+                <!-- Category Card 4 -->
                 <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg">
                     <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
                         <img src="c1-assets/bird-cartoon.png" alt="Birds" class="w-12">
@@ -151,7 +161,7 @@
                     <p class="text-sm text-gray-700 sora-font">3 items</p>
                 </div>
     
-                <!-- Category Card: Small Pet -->
+                <!-- Category Card 5 -->
                 <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg">
                     <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
                         <img src="c1-assets/mouse-cartoon.png" alt="Small Pet" class="w-12">
@@ -160,7 +170,7 @@
                     <p class="text-sm text-gray-700 sora-font">3 items</p>
                 </div>
     
-                <!-- Category Card: Rabbit -->
+                <!-- Category Card 6 -->
                 <div class="bg-[#F9DF8A] p-5 rounded-lg text-center shadow-lg">
                     <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
                         <img src="c1-assets/rabbit-cartoon.png" alt="Rabbit" class="w-12">
@@ -194,7 +204,7 @@
         
               <!-- Small Cards Grid -->
               <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 flex-1 mt-10">
-                <!--Small Cards 1-->
+                <!--Small Card 1-->
                 <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
                   <figure>
                     <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/dog-cartoon.png" alt="Pet Icon" />
@@ -206,7 +216,7 @@
                   </div>
                 </div>
 
-                <!--Small Cards 2-->
+                <!--Small Card 2-->
                 
                 <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
                   <figure>
@@ -376,7 +386,7 @@
      <!-- footer section -->
      
   
-     <!-- News Start -->
+     <!-- News -->
     <div class= "relative flex justify-center md:px-2">
       <section class= "absolute top-24 bg-[#FFF9F4] rounded-2xl max-w-screen-sm md:max-w-screen-xl md:px-3 px-6 mx-2 md:mx-0  pt-4 pb-8 ">
       <div class="md:flex justify-around items-center md:px-40">
@@ -398,7 +408,7 @@
       
     </main>
 
-    <!-- Footer Start-->
+    <!-- Footer-->
     <footer class="bg-[#F9DF8A] md:mt-80 mt-80 md:pt-80 pt-[700px] lg:pt-[400px] pb-32">
       <div class="md:flex md:justify-between space-y-6 gap-5 max-w-screen-xl mx-auto md:px-3 px-4 ">
       <div >
